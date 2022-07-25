@@ -1,9 +1,8 @@
-import java.io.*;
 import java.util.Scanner;
 
 import static java.util.stream.Collectors.joining;
 
-class Result {
+class Result2 {
 
     /*
      * Complete the 'timeConversion' function below.
@@ -36,7 +35,7 @@ public class time {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
-        String result = Result.timeConversion(s);
+        String result = Result2.timeConversion(s);
         System.out.println(result);
     }
 }
