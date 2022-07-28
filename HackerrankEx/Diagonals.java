@@ -23,19 +23,10 @@ class Result3 {
         int a = 0;
         int b = 0;
         for (int i = 0; i < arr.size(); i++) {
-            for (int j = 0; j < arr.get(i).size(); j++) {
-                if (i == 0){
-                    int first = arr.get(i).get(j);
-                    a = first;
-//                }else if (j == arr.size()){
-//                    int nextColum = arr.get(i).get(j+1);
-                }else {
-                    int nextColum = arr.get(i+1).get(j);
-                    a += nextColum;
-                }
-            }
+            a += arr.get(i).get(i);
+            b += arr.get(arr.size() - (i + 1)).get(i);
         }
-        return a;
+        return Math.abs(a - b);
     }
 
 }
